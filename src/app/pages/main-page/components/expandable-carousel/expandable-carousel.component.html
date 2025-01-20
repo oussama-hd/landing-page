@@ -1,0 +1,21 @@
+<div class="options">
+    <div
+      class="option"
+      *ngFor="let option of options; let i = index"
+      [ngClass]="{'active': selectedOption === i}"
+      [style.--optionBackground]="option.background"
+      (click)="onOptionClick(i)"
+    >
+      <div class="shadow"></div>
+      <div class="label">
+        <!-- <div class="icon">
+          <i class="fas" [ngClass]="option.icon"></i>
+        </div> -->
+        <div class="info">
+          <div class="main">{{ option.label }}</div>
+          <div *ngIf="selectedOption === i" class="description">{{ option.description }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
