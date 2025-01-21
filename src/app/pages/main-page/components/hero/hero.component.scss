@@ -1,0 +1,165 @@
+/* ====================
+		HERO CSS
+======================= */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #C2FBFF 0%, rgba(255, 255, 255, 0) 93.47%);
+    z-index: 1;
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section {
+      height: 650px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section {
+      height: 640px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .hero-section {
+      height: auto;
+      padding: 100px 0;
+    }
+  }
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    width: 862px;
+    height: 862px;
+    border-radius: 50%;
+    right: -150px;
+    top: -150px;
+    background: #99ECF2;
+    z-index: -1;
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section::after {
+      width: 780px;
+      height: 780px;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section::after {
+      width: 750px;
+      height: 750px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .hero-section::after {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section .hero-content {
+      padding-top: 50px;
+    }
+  }
+  .hero-section .hero-content h1 {
+    margin-bottom: 15px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-section .hero-content h1 {
+      font-size: 50px;
+    }
+  }
+  @media (max-width: 767px) {
+    .hero-section .hero-content h1 {
+      font-size: 45px;
+    }
+  }
+  .hero-section .hero-content p {
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+  }
+  @media only screen and (min-width: 1400px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section .hero-content p {
+      padding-right: 115px;
+    }
+  }
+  .hero-section .hero-image {
+    padding-top: 50px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .hero-section .hero-image img {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+    .hero-section .hero-image img {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+
+
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+/*============= Start banner_area css =============*/
+.banner_area {
+  background: #04091e;
+  position: relative;
+  z-index: 1;
+}
+
+.banner_area .bg-parallax {
+  background: url("../../../../../assets/images/banner/banner_bg.jpg") no-repeat scroll center 0/cover;
+  opacity: 0.50;
+}
+
+.banner_area .position {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.booking_table {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 800px;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 125%;
+  bottom: 0;
+  z-index: -1;
+}
+
+.banner_content {
+  color: #fff;
+  // margin-bottom: 94px;
+  padding-top: 150px;
+}
+
+.banner_content h6 {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+}
+
+.banner_content h2 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.banner_content p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 0px 20px;
+}

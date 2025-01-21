@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import './assets/css/bootstrap.min.css'; */
+// @import './assets/css/lineicons.css';
+// @import './assets/css/tiny-slider.css';
+
+@import './assets/css/main.css';
+
+.container {
+    //padding-right: 15px;
+    //padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+  }
+
+  .section_gap {
+    padding :120px 0;
+  }
+  
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+.section_title {
+  margin-bottom: 75px;
+}
+
+.section_title h2 {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 600;
+}
+
+.section_title p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #777777;
+  margin-bottom: 0px;
+}
+
+.title_w {
+  color: #fff;
+}
+
+.text-center{
+ text-align: center;
+}
+  
+.mb_30 {
+  margin-bottom: -30px;
+}
+
+/* Colonnes par défaut (petits écrans) */
+.col {
+  flex: 1 1 100%; 
+  padding: 0 8px;
+}
+
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+    }
+    .section_gap {
+      padding: 70px 0;
+    }
+    .col {
+      flex: 1 1 50%; 
+    }
+  }
+
+  //TODO Il faut modifier les cette breakpoint
+  @media (min-width: 960px) {
+    .container {
+      width: 930px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .container {
+      width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+    .col {
+      flex: 1 1 33.33%; 
+    }
+  }
+  
+  @media (min-width: 1519px) {
+    .container {
+      width: 1316px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      width: 100%;
+      //padding-right: 15px;
+      //padding-left: 15px;
+    }
+  }
+  
+  //Breakpoints
+  
+  /* Smaller than desktop 1200 (devices and browsers) */
+  @media (min-width: 960px) and (max-width: 1199px) {
+  }
+  
+  // Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {
+  }
+  
+  // Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+  }
+  
+  // All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+  }
+  
+  // Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  }
+  
+  //Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+  }

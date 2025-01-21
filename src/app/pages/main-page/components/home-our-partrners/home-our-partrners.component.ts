@@ -11,52 +11,14 @@ import {OwlOptions} from 'ngx-owl-carousel-o';
 export class HomeOurPartnersComponent implements OnInit {
 
   partners = [
-    {
-      id:'1',
-      name: 'BMW',
-      image:'assets/images/brands/bmw.png'
-    },
-    {
-      id:'2',
-      name: 'Ferrari',
-      image: 'assets/images/brands/ferrari.png'
-    },
-    {
-      id:'3',
-      name: 'Mahindra',
-      image:"assets/images/brands/mahindra.png"
-    },
-    {
-      id:'4',
-      name: 'Nissan',
-      image:"assets/images/brands/nissan.png"
-    },
-    {
-      id:'5',
-      name: 'Peugeaut',
-      image:"assets/images/brands/peugeaut.png"
-    },
-    {
-      id:'6',
-      name:"Porsche",
-      image:"assets/images/brands/porsche.png"
-    },
-    {
-      id:'7',
-      name: 'Toyota',
-      image:"assets/images/brands/toyota.png"
-    },
-    {
-      id:'8',
-      name: 'NVIDIA',
-      image:"assets/images/brands/mahindra.png"
-    },
-    {
-      id:'9',
-      name: 'Ferrari2',
-      image:"assets/images/brands/ferrari.png"
-    }
-  ]
+    { id: '1', name: 'BMW', image: 'assets/images/brands/bmw.png' },
+    { id: '2', name: 'Ferrari', image: 'assets/images/brands/ferrari.png' },
+    { id: '3', name: 'Mahindra', image: 'assets/images/brands/mahindra.png' },
+    { id: '4', name: 'Nissan', image: 'assets/images/brands/nissan.png' },
+    { id: '5', name: 'Peugeot', image: 'assets/images/brands/peugeaut.png' },
+    { id: '6', name: 'Porsche', image: 'assets/images/brands/porsche.png' },
+    { id: '7', name: 'Toyota', image: 'assets/images/brands/toyota.png' }
+  ];
 
   customOptions: OwlOptions = {
     loop: true,
@@ -84,6 +46,11 @@ export class HomeOurPartnersComponent implements OnInit {
       }
     },
   };
+
+  // Track by function to uniquely identify each partner
+  trackByPartner(partner): any {
+    return partner.id;
+  }
 
   constructor() { }
 

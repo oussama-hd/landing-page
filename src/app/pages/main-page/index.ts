@@ -1,4 +1,5 @@
 import {
+  AboutHistoryAreaComponent,
   BlogSectionComponent,
   ExpandableCarouselComponent,
   FeaturesComponent,
@@ -20,7 +21,8 @@ export const COMPONENTS = [
   TestimonialsComponent,
   BlogSectionComponent,
   ExpandableCarouselComponent,
-  HomeOurPartnersComponent
+  HomeOurPartnersComponent,
+  AboutHistoryAreaComponent
 ];
 
 export const IMPORTS = [

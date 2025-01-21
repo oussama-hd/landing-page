@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   standalone : false,
   selector: 'app-hero',
-  templateUrl: './hero.component.html'
+  templateUrl: './hero.component.html',
+    styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
   constructor(private router: Router) {

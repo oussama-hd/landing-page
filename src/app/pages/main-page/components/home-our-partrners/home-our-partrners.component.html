@@ -1,4 +1,5 @@
-  <div class="container container2 margin-15"  style="margin-bottom: 70px;">
+<section class="section_gap">
+<div class="container">
     <div class="section-header">
       <h3 class="section-header__title">NOS PARTENAIRES</h3>
     </div>
@@ -10,16 +11,18 @@
           <path id="prefix__Path_2277" d="M17.856 6.856a1.494 1.494 0 0 0-2.115 0l-6.885 6.885a1.494 1.494 0 0 0 0 2.115l6.885 6.885a1.5 1.5 0 1 0 2.115-2.115l-5.82-5.835 5.82-5.82a1.508 1.508 0 0 0 0-2.115z" data-name="Path 2277" transform="translate(4.209 3.209)" style="fill:#003147"/>
         </svg>
       </button>
-  
+
       <div class="block-products-carousel">
-        <owl-carousel-o   [options]="customOptions" #owlCar>
-          <ng-container *ngFor="let partner of partners">
+        <owl-carousel-o [options]="customOptions" #owlCar>
+          <ng-container *ngFor="let partner of partners; trackBy: trackByPartner">
             <ng-template carouselSlide [id]="partner.image">
-              <img [src]="partner.image" class="partner-img">
+              <img [src]="partner.image" alt="{{partner.name}}" class="partner-img">
             </ng-template>
           </ng-container>
         </owl-carousel-o>
       </div>
+      
+      
   
       <button  class="Rectangle-392" (click)="owlCar.next()" >
         <svg xmlns="http://www.w3.org/2000/svg" id="prefix__chevron_left-24px" width="36" height="36" viewBox="0 0 36 36">
@@ -29,4 +32,4 @@
       </button>
     </div>
   </div>
-  
+  </section>
