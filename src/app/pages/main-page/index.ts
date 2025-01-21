@@ -9,6 +9,8 @@ import {
 } from './components';
 import {MainPageRouting} from './main-page.routing';
 import {SharedModule} from '../../shared/shared.module';
+import { HomeOurPartnersComponent } from './components/home-our-partrners/home-our-partrners.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 export const COMPONENTS = [
   MainPageComponent,
@@ -18,11 +20,13 @@ export const COMPONENTS = [
   TestimonialsComponent,
   BlogSectionComponent,
   ExpandableCarouselComponent,
+  HomeOurPartnersComponent
 ];
 
 export const IMPORTS = [
   MainPageRouting,
-  SharedModule
+  SharedModule,
+  CarouselModule,
 ];
 
 export const SERVICES = [];
