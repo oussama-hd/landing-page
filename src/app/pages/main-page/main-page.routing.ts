@@ -23,7 +23,7 @@ import {BlogSectionComponent, MainPageComponent, TestimonialsComponent} from './
 
 const mainPageRoutes: Routes = [
   {
-    path: '/fd',
+    path: '/',
     children: [
       {
         path: ':slug',

@@ -1,8 +1,10 @@
 import {
   AboutHistoryAreaComponent,
   BlogSectionComponent,
+  CountriesPlacesScrollComponent,
   ExpandableCarouselComponent,
   FeaturesComponent,
+  FlexHoverSliderComponent,
   HeroComponent,
   MainPageComponent,
   TestimonialsComponent,
@@ -22,7 +24,9 @@ export const COMPONENTS = [
   BlogSectionComponent,
   ExpandableCarouselComponent,
   HomeOurPartnersComponent,
-  AboutHistoryAreaComponent
+  AboutHistoryAreaComponent,
+  FlexHoverSliderComponent,
+  CountriesPlacesScrollComponent
 ];
 
 export const IMPORTS = [

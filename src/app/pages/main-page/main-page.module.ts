@@ -6,8 +6,8 @@ import {COMPONENTS, IMPORTS, SERVICES, EXPORTS} from '.';
     ...COMPONENTS
   ],
     imports: [
-        ...IMPORTS
-    ],
+    ...IMPORTS
+],
   providers: [
     ...SERVICES
   ],
