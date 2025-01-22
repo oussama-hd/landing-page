@@ -26,7 +26,7 @@ export const COMPONENTS = [
   HomeOurPartnersComponent,
   AboutHistoryAreaComponent,
   FlexHoverSliderComponent,
-  CountriesPlacesScrollComponent
+  // CountriesPlacesScrollComponent
 ];
 
 export const IMPORTS = [
