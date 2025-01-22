@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import {OwlOptions} from 'ngx-owl-carousel-o';
 
 @Component({
-  standalone:false,
+  standalone: false,
   selector: 'app-home-our-partners',
   templateUrl: './home-our-partrners.component.html',
   styleUrls: ['./home-our-partrners.component.scss']

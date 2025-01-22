@@ -1,4 +1,4 @@
-<footer class="footer pt-120">
+<!-- <footer class="footer pt-120">
   <div class="container">
     <div class="row">
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
@@ -35,6 +35,94 @@
             <input type="email" placeholder="Email">
             <button class="main-btn btn-hover">Subscribe</button>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- footer.component.html -->
+
+<footer class="modern-footer ">
+  <div class="container">
+    <div class="row footer-content section_gap">
+      <!-- Company Info -->
+      <div class="col">
+        <a href="#" class="footer-logo d-block mb-4">
+          YourBrand<span class="text-primary">.</span>
+        </a>
+        <p class="mb-4">
+          Empowering businesses with innovative digital solutions. We create meaningful experiences that drive success.
+        </p>
+        <ul class="contact-info mb-4">
+          <li>
+            <!-- <i class="fas fa-map-marker-alt"></i> -->
+            <a href="#">
+              <img [src]="'assets/images/icons/position.png'" [alt]="'position'" />
+            </a>
+            <span>123 Business Avenue, Suite 100<br>New York, NY 10001</span>
+          </li>
+          <li>
+            <!-- <i class="fas fa-phone"></i> -->
+            <a href="#">
+              <img [src]="'assets/images/icons/telephone.png'" [alt]="'telephone'" />
+            </a>
+            <span>+1 (555) 123-4567</span>
+          </li>
+          <li>
+
+            <!-- <i class="fas fa-envelope"></i> -->
+            <a href="#">
+              <img [src]="'assets/images/icons/email.png'" [alt]="'email'" />
+            </a>
+            <span>contact&#64;yourbrand.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="quick-links">
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">About Company</a></li>
+          <li><a href="#">Latest Projects</a></li>
+          <li><a href="#">Recent News</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Contact Details</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col">
+        <h3 class="footer-title">Stay Connected</h3>
+        <p class="mb-4">Subscribe to our newsletter and stay updated with the latest news and insights.</p>
+        <form (submit)="onSubscribe()" class="mb-4">
+          <div class="mb-3">
+            <input type="email"  name="email" class="form-control newsletter-input" placeholder="Your email address">
+          </div>
+          <button type="submit" class="btn btn-subscribe text-white w-100">Subscribe Now</button>
+        </form>
+        <div class="social-links">
+          <a *ngFor="let link of socialLinks" [href]="link.url" class="social-icon" target="_blank">
+            <img [src]="link.iconPath" [alt]="link.name" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row footer-padding">
+        <div class="col text-md-start">
+          <p>&copy; 2024 YourBrand. All rights reserved.</p>
+        </div>
+        <div class="col text-md-end">
+          <p>Made with  by <a href="#">YourBrand</a></p>
         </div>
       </div>
     </div>
