@@ -1,7 +1,7 @@
 import {
   AboutHistoryAreaComponent,
   BlogSectionComponent,
-  CountriesPlacesScrollComponent,
+  // CountriesPlacesScrollComponent,
   ExpandableCarouselComponent,
   FeaturesComponent,
   FlexHoverSliderComponent,
