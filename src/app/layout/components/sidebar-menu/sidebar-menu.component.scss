@@ -1,0 +1,31 @@
+.side-nav {
+  display: block; 
+  top: 50px;
+  left: 50px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+// .side-nav[hidden] {
+//   transform: translateX(-100%); 
+// }
+
+// .side-nav ul.menu {
+//   padding: 0;
+//   list-style: none;
+// }
+
+.side-nav .menu .item {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+// .sidenav-toggle-btn {
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+// }

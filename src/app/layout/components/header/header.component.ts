@@ -1,6 +1,7 @@
-import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
+import {ChangeDetectorRef, Component, HostListener, Input, NgZone, OnInit, ViewChild} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
+import { BlinkService } from '../../../services/blink.service';
 
 @Component({
   standalone:false,
@@ -27,7 +28,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('navbarArea') navbarArea;
   
   toggleNavbar = true;
-  constructor(private router: Router) {
+  constructor(private router: Router, public blinkService: BlinkService) {
     this.onScroll();
   }
 
@@ -39,6 +40,19 @@ export class HeaderComponent implements OnInit {
         this.activeUrl = event.url;
       });
   }
+
+  // This will control the visibility of the mobile menu
+  isMenuOpen: boolean = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  toggleSideNav() {
+      this.blinkService.sideNavOpen = !this.blinkService.sideNavOpen;
+      this.blinkService.showNavMenu = !this.blinkService.showNavMenu;
+  }
+
 
   get menuItems() {
     if (this.menuData) {

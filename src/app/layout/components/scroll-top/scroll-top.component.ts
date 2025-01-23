@@ -1,9 +1,10 @@
 import {Component, HostListener} from '@angular/core';
 
 @Component({
-  standalone:false,
+  standalone: false,
   selector: 'app-scroll-top',
-  templateUrl: './scroll-top.component.html'
+  templateUrl: './scroll-top.component.html',
+  styleUrl: './scroll-top.component.scss'
 })
 export class ScrollTopComponent {
 
