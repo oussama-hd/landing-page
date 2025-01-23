@@ -1,4 +1,4 @@
-import {LoaderComponent } from './components';
+import {LoaderComponent, NavbarLogoComponent } from './components';
 import {CommonModule} from '@angular/common';
 import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
 
