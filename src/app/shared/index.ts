@@ -1,8 +1,11 @@
-import {LoaderComponent} from './components';
+import {LoaderComponent } from './components';
 import {CommonModule} from '@angular/common';
+import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
+
 
 export const COMPONENTS = [
-  LoaderComponent
+  LoaderComponent,
+  InfiniteScrollComponent
 ];
 
 export const IMPORTS = [
@@ -13,5 +16,6 @@ export const SERVICES = [];
 
 export const EXPORTS = [
   CommonModule,
-  LoaderComponent
+  LoaderComponent,
+  InfiniteScrollComponent
 ];

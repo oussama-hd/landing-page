@@ -6,6 +6,7 @@ import {
   FeaturesComponent,
   FlexHoverSliderComponent,
   HeroComponent,
+  InfiniteScrollSectionComponent,
   MainPageComponent,
   TestimonialsComponent,
   TwoColumnWithImageComponent
@@ -26,7 +27,7 @@ export const COMPONENTS = [
   HomeOurPartnersComponent,
   AboutHistoryAreaComponent,
   FlexHoverSliderComponent,
-  // CountriesPlacesScrollComponent
+  InfiniteScrollSectionComponent
 ];
 
 export const IMPORTS = [

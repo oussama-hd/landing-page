@@ -1,0 +1,28 @@
+ <article class="wrapper wrapper--vertical">    
+    <div class="marquee marquee--vertical">
+      <div class="marquee__group">
+        <div *ngFor="let icon of icons">
+          <img [src]="icon.url" alt="{{icon.name}}" >
+        </div>
+      </div>
+      <div aria-hidden="true" class="marquee__group">
+        <div *ngFor="let icon of icons">
+          <img [src]="icon.url" alt="{{icon.name}}" >
+        </div>
+      </div>
+    </div>
+  
+    <div class="marquee marquee--vertical marquee--reverse">
+      <div class="marquee__group" >
+        <div *ngFor="let icon of icons">
+          <img [src]="icon.url" alt="{{icon.name}}">
+        </div>
+      </div>
+      <div aria-hidden="true" class="marquee__group">
+        <div *ngFor="let icon of icons">
+          <img [src]="icon.url" alt="{{icon.name}}" >
+        </div>
+      </div>
+    </div>
+</article>
+  
