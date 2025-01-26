@@ -1,11 +1,12 @@
-import {LoaderComponent, NavbarLogoComponent } from './components';
+import {LanguageDropdownComponent, LoaderComponent, NavbarLogoComponent } from './components';
 import {CommonModule} from '@angular/common';
 import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
 
 
 export const COMPONENTS = [
   LoaderComponent,
-  InfiniteScrollComponent
+  InfiniteScrollComponent,
+  LanguageDropdownComponent
 ];
 
 export const IMPORTS = [
@@ -17,5 +18,6 @@ export const SERVICES = [];
 export const EXPORTS = [
   CommonModule,
   LoaderComponent,
-  InfiniteScrollComponent
+  InfiniteScrollComponent,
+  LanguageDropdownComponent
 ];

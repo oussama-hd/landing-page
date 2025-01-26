@@ -1,142 +1,27 @@
-<!-- <footer class="footer pt-120">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-        <div class="footer-widget">
-          <div class="logo">
-            <a href="https://buttercms.com">
-              <img width="200" src="https://cdn.buttercms.com/PBral0NQGmmFzV0uG7Q6" alt="logo" loading="lazy">
-            </a>
-          </div>
-          <p class="desc">ButterCMS is your content backend. Build better with Butter.</p>
-          <ul class="social-links">
-            <li><a href="#0"><i class="lni lni-facebook"></i></a></li>
-            <li><a href="#0"><i class="lni lni-linkedin"></i></a></li>
-            <li><a href="#0"><i class="lni lni-instagram"></i></a></li>
-            <li><a href="#0"><i class="lni lni-twitter"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 offset-xl-1">
-        <div class="footer-widget">
-          <h3>About Us</h3>
-          <ul class="links">
-            <ng-container *ngFor="let item of menuItems">
-              <li><a class="page-scroll active" href="{{item.url}}">{{item.label}}</a></li>
-            </ng-container>
-          </ul>
-        </div>
-      </div>
 
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="footer-widget">
-          <h3>Subscribe Newsletter</h3>
-          <form action="#">
-            <input type="email" placeholder="Email">
-            <button class="main-btn btn-hover">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
-
-<!-- footer.component.html -->
-
-<footer class="modern-footer ">
+<footer class="footer">
   <div class="container">
     <div class="row footer-content section_gap">
-      <!-- Company Info -->
-      <div class="col">
-        <a href="#" class="footer-logo d-block mb-4">
-          YourBrand<span class="text-primary">.</span>
+      <img [src]="'assets/images/footer-logo.svg'" alt="footer logo" />
+      <p class="footer-description"> B-Link Solution, fondée en 2021, est un leader innovant dans le domaine de l'InsurTech. Notre expertise allie une profonde connaissance du secteur de l'assurance à une maîtrise des technologies de pointe.</p>
+      <div class="social-links">
+        <a *ngFor="let link of socialLinks" [href]="link.url" class="social-icon" target="_blank">
+          <img [src]="link.iconPath" [alt]="link.name" />
         </a>
-        <p class="mb-4">
-          Empowering businesses with innovative digital solutions. We create meaningful experiences that drive success.
+      </div>  
+      <div class="download-button">
+        <img [src]="'assets/images/icons/googleplay.svg'" class="play store">
+        <img [src]="'assets/images/icons/appstore.svg'" class="google play">
+      </div>
+      <div class="footer-bottom">
+        <p>
+          ©{{ currentYear }} All Rights Reserved. Blink®
         </p>
-        <ul class="contact-info mb-4">
-          <li>
-            <!-- <i class="fas fa-map-marker-alt"></i> -->
-            <a href="#">
-              <img [src]="'assets/images/icons/position.png'" [alt]="'position'" />
-            </a>
-            <span>123 Business Avenue, Suite 100<br>New York, NY 10001</span>
-          </li>
-          <li>
-            <!-- <i class="fas fa-phone"></i> -->
-            <a href="#">
-              <img [src]="'assets/images/icons/telephone.png'" [alt]="'telephone'" />
-            </a>
-            <span>+1 (555) 123-4567</span>
-          </li>
-          <li>
-
-            <!-- <i class="fas fa-envelope"></i> -->
-            <a href="#">
-              <img [src]="'assets/images/icons/email.png'" [alt]="'email'" />
-            </a>
-            <span>contact&#64;yourbrand.com</span>
-          </li>
-        </ul>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col">
-        <h3 class="footer-title">Quick Links</h3>
-        <ul class="quick-links">
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">About Company</a></li>
-          <li><a href="#">Latest Projects</a></li>
-          <li><a href="#">Recent News</a></li>
-          <li><a href="#">Customer Support</a></li>
-          <li><a href="#">Contact Details</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col">
-        <h3 class="footer-title">Stay Connected</h3>
-        <p class="mb-4">Subscribe to our newsletter and stay updated with the latest news and insights.</p>
-        <form (submit)="onSubscribe()" class="mb-4">
-          <div class="mb-3">
-            <input type="email"  name="email" class="form-control newsletter-input" placeholder="Your email address">
-          </div>
-          <button type="submit" class="btn btn-subscribe text-white w-100">Subscribe Now</button>
-        </form>
-        <div class="social-links">
-          <a *ngFor="let link of socialLinks" [href]="link.url" class="social-icon" target="_blank">
-            <img [src]="link.iconPath" [alt]="link.name" />
-          </a>
-        </div>
-      </div>
     </div>
   </div>
 
-  <!-- Footer Bottom -->
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row footer-padding">
-        <div class="col text-md-start">
-          <p>&copy; 2024 YourBrand. All rights reserved.</p>
-        </div>
-        <div class="col text-md-end">
-          <p>Made with  by <a href="#">YourBrand</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
 </footer>
 
 <app-scroll-top></app-scroll-top>
-
-<!-- =================== JS All Templates ========================= -->
-<!-- <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/polyfill.js"></script>
-<script src="assets/js/main.js"></script> -->
-
-<!-- ================= JS Index HTML only ========================= -->
-<!-- <script src="assets/js/tiny-slider.js"></script>
-<script src="assets/js/client-slider.js"></script>
-<script src="assets/js/section-menu.js"></script> -->

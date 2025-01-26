@@ -1,0 +1,40 @@
+.language-dropdown {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .dropdown-trigger {
+    display: flex;
+    align-items: center;
+  }
+
+  .flag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 77px;
+    right: 0;
+    width: 133px;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    border: 1px solid var(--blanc);
+    border-radius: 19px;
+    background-color: var(--blanc);
+    z-index: 3;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-text-normal);
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+
+  

@@ -1,0 +1,55 @@
+:root {
+--primary: #7371ff; 
+--primary-hover: #6866e6; 
+--primary-active: #5c5acc; 
+
+ /* Secondary Colors */
+--secondary: #7239EA; 
+--info: #17C653; 
+--warning: #F6B100; 
+--danger: #D92D20; 
+
+/*  Neutral Colors */
+--light: #f1f1ff; 
+--light-hover: #eaeaff;
+--light-active: #d4d3ff;
+--dark: #5655bf; 
+--dark-hover: #454499; 
+--dark-active: #343373;
+--darker: #282859; 
+--background: #F9F9F9; 
+
+/* Accent Colors */
+--orange: #FF6F1E;
+
+/* Text Colors */
+--blanc: #ffffff; 
+--text-dark: #1E2129; 
+--footer-background :#343373;
+/* sizes  */
+
+--font-title-large: 49px; 
+--font-title-medium: 25px;
+--font-title-small: 20px; 
+
+/* Button Text */
+--font-button: 15px; 
+
+/* Normal Text */
+--font-text-normal: 16px;
+
+/* Descriptions */
+--font-description-small: 13px; 
+--font-description-medium: 16px; 
+
+
+/* infinite component  */
+  --color-text: navy;
+  --color-bg: papayawhip;
+  --color-bg-accent: #ecdcc0;
+  --size: clamp(4rem, 1rem + 40vmin, 17rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 20s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}

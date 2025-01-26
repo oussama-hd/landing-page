@@ -8,53 +8,46 @@ import { SocialLink } from '../../../models/SocialLink';
   styleUrl:'./footer.component.scss'
 })
 export class FooterComponent {
-  email: string = ''; 
-  // @Input() menuData:any;
+
+   currentYear: number;
+
    socialLinks: SocialLink[] = [
     {
         name: 'Facebook',
         url: 'https://www.facebook.com',
-        iconPath: 'assets/images/icons/facebook.png'
+        iconPath: 'assets/images/icons/facebook.svg'
     },
     {
         name: 'Twitter',
         url: 'https://www.twitter.com',
-        iconPath: 'assets/images/icons/twitter.png'
+        iconPath: 'assets/images/icons/twitter.svg'
     },
     {
         name: 'Instagram',
         url: 'https://www.instagram.com',
-        iconPath: 'assets/images/icons/instagram.png'
+        iconPath: 'assets/images/icons/instagram.svg'
     },
     {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com',
-        iconPath: 'assets/images/icons/linkedin.png'
+        iconPath: 'assets/images/icons/linkedin.svg'
     },
     {
         name: 'YouTube',
         url: 'https://www.youtube.com',
-        iconPath: 'assets/images/icons/youtube.png'
+        iconPath: 'assets/images/icons/youtube.svg'
+    },
+    {
+      name: 'icon',
+      url: '#',
+      iconPath: 'assets/images/icons/Icon.svg'
     }
 ];
-
-
-  // Subscribe method
-  onSubscribe(): void {
-    if (this.email) {
-      console.log('Subscribed with email:', this.email);
-      // Handle subscription logic here (e.g., sending the email to the server)
-    }
+  
+  constructor() {}
+  
+  ngOnInit() {
+    this.currentYear = new Date().getFullYear();
   }
-
-  constructor() {
-  }
-
-  // get menuItems() {
-  //   if (this.menuData) {
-  //     return this.menuData.data.data.navigation_menu[0].menu_items;
-  //   }
-  //   return [];
-  // }
 
 }

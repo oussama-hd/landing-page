@@ -13,12 +13,14 @@ export class HeaderComponent implements OnInit {
 
   menus = [
     { label: 'Home', url: '#home' },
-    { label: 'About', url: '#about' },
-    { label: 'Services', url: '#services' },
-    { label: 'Portfolio', url: '#portfolio' },
-    { label: 'Contact', url: '#contact' }
+    { label: 'ERP Insurance', url: '#erp-insurance' },
+    { label: 'Modules', url: '#modules' },
+    { label: 'Clients', url: '#clients' },
+    { label: 'Partners', url: '#partners' },
+    { label: 'Contact', url: '#contact' },
+    { label: 'About', url: '#about' }
   ];
-
+  
   public isSticky = false;
   public toggler = false;
 

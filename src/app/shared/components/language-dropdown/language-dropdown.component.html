@@ -1,0 +1,17 @@
+<div class="language-dropdown">
+    <div class="dropdown-trigger" (click)="toggleDropdown()">
+      <img [src]="selectedLanguage.img" class="flag" />
+      <img src="assets/images/chevron-down.svg" class="dropdown-icon" />
+    </div>
+    <ul class="dropdown-menu" *ngIf="isDropdownOpen">
+      <li
+        *ngFor="let language of languages"
+        (click)="selectLanguage(language)"
+        class="dropdown-item"
+      >
+        <img [src]="language.img" class="flag" />
+        <span>{{ language.label }}</span>
+      </li>
+    </ul>
+</div>
+  
