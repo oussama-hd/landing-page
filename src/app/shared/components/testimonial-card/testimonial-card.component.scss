@@ -1,0 +1,44 @@
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem; 
+    border: 1px solid var(--light-active); 
+    border-radius: 0.5rem; 
+    // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: var(--blanc); 
+    height: 100%;
+  }
+  
+  .testimonial-text {
+    font-family: "InterLight" ;
+    color: var(--text-description); 
+    margin-bottom: 1rem; 
+    font-size: 14.75px;
+    line-height: 1.6rem;
+  }
+  
+  .testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem; 
+}
+  
+  .testimonial-image {
+    width: 48px; 
+    height: 48px;
+    border-radius: 50%; 
+  }
+  
+  .testimonial-name {
+    font-size: 17px; 
+    font-weight: 600;
+  }
+  
+  .testimonial-role {
+    font-size: var(--text-description);
+    font-weight: 200;
+    font-style: normal;
+    color: #878787; 
+  }
+  

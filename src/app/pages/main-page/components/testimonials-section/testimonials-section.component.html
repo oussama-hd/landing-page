@@ -1,0 +1,12 @@
+<section class="container">
+    <div class="section_gap">
+      <app-title title="Testimonials"></app-title>
+      <p class="subheader">Redéfinir votre business et votre perception du marché via les solutions web BLINK</p>
+      <div class="grid-container">
+        <app-testimonial-card
+        *ngFor="let testimonial of testimonials"
+        [testimonial]="testimonial"
+      ></app-testimonial-card>
+      </div>
+    </div>
+</section>

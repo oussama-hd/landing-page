@@ -1,5 +1,5 @@
 import {Routes, RouterModule} from '@angular/router';
-import {BlogSectionComponent, MainPageComponent, TestimonialsComponent} from './components';
+import {BlogSectionComponent, MainPageComponent} from './components';
 
 /*const mainPageRoutes: Routes = [
   {

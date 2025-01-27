@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-scroll.component';
 import { ModuleCardComponent } from './components/module-card/module-card.component';
 import { TitleComponent } from './components/title/title.component';
+import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 
 
 export const COMPONENTS = [
@@ -11,6 +12,7 @@ export const COMPONENTS = [
   LanguageDropdownComponent,
   ModuleCardComponent,
   TitleComponent,
+  TestimonialCardComponent
 ];
 
 export const IMPORTS = [
@@ -24,6 +26,7 @@ export const EXPORTS = [
   LoaderComponent,
   InfiniteScrollComponent,
   LanguageDropdownComponent,
+  TitleComponent,
   ModuleCardComponent,
-  TitleComponent
+  TestimonialCardComponent
 ];
