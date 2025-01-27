@@ -75,17 +75,17 @@ video {
   vertical-align: middle;
 }
 
-h1,
-h2,
-h3,
-.single-post-header,
-.blog-roll-card-header,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  margin: 0px;
-}
+// h1,
+// h2,
+// h3,
+// .single-post-header,
+// .blog-roll-card-header,
+// h4,
+// h5,
+// h6 {
+//   font-weight: 700;
+//   margin: 0px;
+// }
 
 h1 a,
 h2 a,
@@ -98,12 +98,25 @@ h6 a {
   color: inherit;
 }
 
-h1 {
-  font-size: 55px;
-}
+// h1 {
+//   font-size: 55px;
+// }
 
-h2 {
-  font-size: 45px;
+// h2 {
+//   font-size: 45px;
+// }
+
+.subheader {
+  width: 100%;
+  margin: 15px 0 0;
+  font-size: var(--font-text-normal);
+  // font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  text-align: center;
+  // color: var(--primary);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -117,21 +130,21 @@ h2 {
   }
 }
 
-h3, .single-post-header, .blog-roll-card-header {
-  font-size: 25px;
-}
+// h3, .single-post-header, .blog-roll-card-header {
+//   font-size: 25px;
+// }
 
-h4 {
-  font-size: 20px;
-}
+// h4 {
+//   font-size: 20px;
+// }
 
-h5 {
-  font-size: 18px;
-}
+// h5 {
+//   font-size: 18px;
+// }
 
-h6 {
-  font-size: 16px;
-}
+// h6 {
+//   font-size: 16px;
+// }
 
 /* ul,
 ol {

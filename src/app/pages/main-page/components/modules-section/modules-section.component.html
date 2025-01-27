@@ -1,0 +1,14 @@
+<section class="container">
+<div class="section_gap">
+   <app-title title="Modules ERP Blink"></app-title>
+  <p class="subheader">Modules ERP efficaces avec beaucoup de fonctionnalité</p>
+  <div class="grid-container">
+    <app-module-card
+      *ngFor="let module of modules"
+      [title]="module.title"
+      [description]="module.description"
+      [iconPath]="module.iconPath">
+    </app-module-card>
+  </div>
+</div>
+</section>
