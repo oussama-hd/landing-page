@@ -4,6 +4,7 @@ import { InfiniteScrollComponent } from './components/infinite-scroll/infinite-s
 import { ModuleCardComponent } from './components/module-card/module-card.component';
 import { TitleComponent } from './components/title/title.component';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
+import { UltimeAssuranceCardComponent } from './components/ultime-assurance-card/ultime-assurance-card.component';
 
 
 export const COMPONENTS = [
@@ -12,6 +13,7 @@ export const COMPONENTS = [
   LanguageDropdownComponent,
   ModuleCardComponent,
   TitleComponent,
+  UltimeAssuranceCardComponent,
   TestimonialCardComponent
 ];
 
@@ -28,5 +30,6 @@ export const EXPORTS = [
   LanguageDropdownComponent,
   TitleComponent,
   ModuleCardComponent,
+  UltimeAssuranceCardComponent,
   TestimonialCardComponent
 ];

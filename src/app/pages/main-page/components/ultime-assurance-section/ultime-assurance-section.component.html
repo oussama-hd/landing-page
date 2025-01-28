@@ -1,0 +1,59 @@
+<!-- <section class="container">
+  <div class="grid-container">
+    <div class="card"> 
+      <h3>Pilotez Votre Activité</h3>
+      <p>Toutes vos structures collaborent dans un seul ERP d'assurance...</p>
+    </div>
+    <div class="card">
+      <h3>Innovez sur les produits</h3>
+      <p>Fini les contraintes des logiciels d'assurance archaïques...</p>
+    </div>
+    <div class="card tall"> 
+      <h3>Puissance</h3>
+      <p>Les solutions d'assurance sont conçues pour...</p>
+    </div>
+    <div class="card"> 
+      <h3>Modularité</h3>
+      <p>Nos développements modulaires...</p>
+    </div>
+    <div class="card "> 
+      <h3>Disponibilité</h3>
+      <p>Nous vous accompagnons dans vos projets...</p>
+    </div>
+    <div class="card large"> 
+      <h3>Expérience Unique</h3>
+      <p>Toutes les actions et tâches de vos collaborateurs...</p>
+    </div>
+  </div>
+</section> -->
+
+  
+<section class="container">
+  <div class="section_gap">
+    <app-title title="Ultime Erp Assurance"></app-title>
+    <p class="subheader">Révolutionnez votre métier et vos process ... digitalisez votre activité!</p>
+    <div class="grid-container">
+      <app-ultime-assurance-card
+          *ngFor="let card of cards"
+          [icon]="card.icon"
+          [ngClass]="card.extraClass"
+          [title]="card.title"
+          [description]="card.description"
+          [imageUrl]="card.imageUrl"
+          [isLarge]="card.isLarge">
+      </app-ultime-assurance-card>
+    </div>
+    <div class="experience-section">
+      <div class="image">
+        <img src="assets/images/ultimeErp/bg-experience.svg" alt="Experience Section" />
+      </div>
+      <div class="text-overlay">
+        <h2>Expérience Unique</h2>
+        <p>
+          Toutes les actions et tâches de vos collaborateurs <br />
+           s’exécutent en quelques clics.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

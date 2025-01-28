@@ -1,0 +1,20 @@
+<!-- [ngClass]= "isLarge ? 'image-overlay' : ''" -->
+<div class="card" [ngClass]="extraClass" > 
+    <div class="card-content">
+        <div *ngIf="icon" 
+            class="icon" 
+            [ngClass]="extraClass" 
+            [style.icon]="'url(' + icon + ')'">
+          <img [src]="icon" alt="Card Icon">
+        </div>
+
+          <h3>{{ title }}</h3>
+          <p>{{ description }}</p>
+    </div>
+
+    <div *ngIf="imageUrl" class="background-image">
+      <img [src]="imageUrl" alt="Card Image">
+    </div>
+</div>                                   
+
+
