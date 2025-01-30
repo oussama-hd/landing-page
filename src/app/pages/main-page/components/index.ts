@@ -6,3 +6,8 @@ export * from './flex-hover-slider/flex-hover-slider.component';
 export * from './infinite-scroll-section/infinite-scroll-section.component'
 export * from './testimonials-section/testimonials-section.component'
 export * from './ultime-assurance-section/ultime-assurance-section.component'
+export * from './contact-us/contact-us.component'
+export * from './about-us-section/about-us-section.component'
+export * from './slider/slider.component'
+export * from './slider/Thumbnail/thumbnail.component'
+export * from './slider/slider-item/slider-item.component'

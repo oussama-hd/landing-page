@@ -5,7 +5,8 @@ import { ModuleCardComponent } from './components/module-card/module-card.compon
 import { TitleComponent } from './components/title/title.component';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
 import { UltimeAssuranceCardComponent } from './components/ultime-assurance-card/ultime-assurance-card.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ExpandableButtonComponent } from './components/expandable-button/expandable-button.component';
 
 export const COMPONENTS = [
   LoaderComponent,
@@ -14,11 +15,14 @@ export const COMPONENTS = [
   ModuleCardComponent,
   TitleComponent,
   UltimeAssuranceCardComponent,
-  TestimonialCardComponent
+  TestimonialCardComponent,
+  ExpandableButtonComponent
 ];
 
 export const IMPORTS = [
-  CommonModule
+  CommonModule,
+  FormsModule , 
+  ReactiveFormsModule
 ];
 
 export const SERVICES = [];
@@ -31,5 +35,6 @@ export const EXPORTS = [
   TitleComponent,
   ModuleCardComponent,
   UltimeAssuranceCardComponent,
-  TestimonialCardComponent
+  TestimonialCardComponent,
+  ExpandableButtonComponent
 ];

@@ -1,0 +1,22 @@
+<div class="accordion" [id]="section.id">
+  <h1 class="title1">
+    <a [href]="'#' + section.id">{{ section.title }}</a>
+  </h1>
+  <div class="content">
+    <div class="wrapper">
+      <p>{{ section.content }}</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="accordion-desktop">
+  <button class="title-desktop" (click)="toggleContent()">
+    {{ section.title }}
+  </button>
+  <div *ngIf="isOpen">
+    <div class="wrapper">
+      <p>{{ section.content }}</p>
+    </div>
+  </div>
+</div> -->

@@ -1,12 +1,17 @@
 import {
+  AboutUsSectionComponent,
   BlogSectionComponent,
+  ContactUsComponent,
   // CountriesPlacesScrollComponent,
   ExpandableCarouselComponent,
   FlexHoverSliderComponent,
   HeroComponent,
   InfiniteScrollSectionComponent,
   MainPageComponent,
+  SliderComponent,
+  SliderItemComponent,
   TestimonialsSectionComponent,
+  ThumbnailComponent,
 } from './components';
 import {MainPageRouting} from './main-page.routing';
 import {SharedModule} from '../../shared/shared.module';
@@ -25,7 +30,12 @@ export const COMPONENTS = [
   InfiniteScrollSectionComponent,
   ModulesSectionComponent,
   TestimonialsSectionComponent,
-  UltimeAssuranceSectionComponent
+  UltimeAssuranceSectionComponent,
+  ContactUsComponent,
+  AboutUsSectionComponent,
+  ThumbnailComponent,
+  SliderItemComponent,
+  SliderComponent
 ];
 
 export const IMPORTS = [

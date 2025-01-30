@@ -1,0 +1,100 @@
+:root {
+    --size-header: 2.25rem;
+    --size-accordion-title: 1.25rem;
+    --size-accordion-content: 0.5rem;
+    --animation-speed: 100;
+    --slide-ease: cubic-bezier(0.86, 0, 0.07, 1);
+    --slide-duration: calc(400ms * 100 / var(--animation-speed));
+    --slide-delay: calc(450ms * 100 / var(--animation-speed));
+    --circle-duration: calc(900ms * 100 / var(--animation-speed));
+  }
+  
+  .accordion {
+    --circle-x: 1.8rem;
+    --circle-y: 0;
+    --circle-r: 200%;
+    background: var(--blanc);
+    opacity: 0.62;
+    color: var(--primary);
+    max-width: 200px;
+    margin-bottom: 1rem;
+    border-radius: 29px;
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+    transition-timing-function: var(--slide-ease);
+    transition-duration: 200ms, 200ms, var(--slide-duration);
+    transition-property: opacity, box-shadow, grid-template-rows;
+    transition-delay: 0ms, 0ms, var(--slide-delay);
+  }
+  
+  /* .accordion:not(:target):hover {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+  } */
+  
+  .accordion:not(:target):active {
+    opacity: 1;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .accordion,
+  .content {
+    overflow: hidden;
+  }
+  
+  .accordion:target {
+    --d: 90deg;
+    grid-template-rows: 0fr 1fr;
+    transition: grid-template-rows var(--slide-ease) var(--slide-duration)
+      var(--slide-delay);
+  }
+  
+  .wrapper {
+    padding-block: 0 1.05rem;
+    padding-inline: 1.25rem;
+  }
+  
+  .content {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  
+  .content p {
+    margin-bottom: 0.4rem;
+    color: black;
+  }
+  
+  .content a {
+    color: currentColor;
+    font-weight: 800;
+    text-decoration: underline;
+  }
+  
+  main :last-child,
+  .content :last-child {
+    margin-bottom: 0;
+  }
+  
+  .title1 a {
+    padding: 1rem ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: currentColor;
+    text-decoration: none;
+  }
+  
+  .title1 a::after {
+    content: "+";
+    left: 0;
+    top: 0;
+    width: 0.65rem;
+    aspect-ratio: 320 / 512;
+    display: inline-block;
+    margin-left: 0.75rem;
+    transform: rotate(var(--d, 0deg));
+    transition: transform var(--slide-ease) var(--slide-duration) var(--slide-delay);
+    
+  }
