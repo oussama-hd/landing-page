@@ -1,0 +1,21 @@
+<section class="slider">
+<div class="section-container">
+    <app-slider-item 
+        *ngFor="let item of items; let i = index"
+        [image]="item.image"
+        [title]="item.title"
+        [content]="item.content"
+        [isActive]="i === itemActive">
+    </app-slider-item>
+   
+    <app-thumbnail
+        [activeIndex]="itemActive"
+        (itemSelected)="onThumbnailSelect($event)">
+    </app-thumbnail>
+
+<!-- <div style="background: red;">conteneur 1</div>
+
+<div style="background: yellow;">conteneur 2</div> -->
+</div>
+
+</section>

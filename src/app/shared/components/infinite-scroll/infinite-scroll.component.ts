@@ -10,33 +10,28 @@ export class InfiniteScrollComponent {
   
   icons = [
     {
-        name: 'mcdonalds',
-        url: 'assets/images/icons/mcdonalds.svg'
+        name: 'html',
+        url: 'assets/images/icons/tech/html.svg'
     },
     {
-        name: 'jordan',
-        url: 'assets/images/icons/jordan.svg',
+        name: 'css',
+        url: 'assets/images/icons/tech/css.svg',
     },
     {
-        name: 'aws',
-        url: 'assets/images/icons/aws.svg',
+        name: 'java',
+        url: 'assets/images/icons/tech/java.svg',
     },
     {
-        name: 'spotify',
-        url: 'assets/images/icons/spotify.svg',
+        name: 'angular',
+        url: 'assets/images/icons/tech/angular.svg',
     },
     {
-        name: 'burger-king',
-        url: 'assets/images/icons/burger-king.svg',
+      name: 'redHat',
+      url: 'assets/images/icons/tech/redhat.svg',
     },
-    {
-      name: 'honda',
-      url:  'assets/images/icons/honda.svg',
-    },
-    {
-      name: 'hula',
-      url:  'assets/images/icons/hula.svg',
-    },
+
+
 ];
+
 
 }

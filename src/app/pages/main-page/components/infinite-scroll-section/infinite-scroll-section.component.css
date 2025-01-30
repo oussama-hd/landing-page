@@ -1,0 +1,15 @@
+h2{
+    max-width: 50%;
+}
+
+@media (max-width: 1023px) {
+
+    h2{
+        max-width: 100%;
+        font-size: var(--font-title-medium)
+    }
+
+    .content {
+        margin-bottom: 90px !important;
+    }
+}

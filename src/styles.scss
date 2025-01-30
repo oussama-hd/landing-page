@@ -119,6 +119,18 @@ h6 a {
   // color: var(--primary);
 }
 
+.subheader2 {
+  width: 100%;
+  margin: 15px 0 0;
+  font-size: var(--font-text-normal);
+  // font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  // color: var(--primary);
+}
+
 
 .title {
   width: 100%;
@@ -132,15 +144,37 @@ h6 a {
   line-height: 1.45;
   letter-spacing: normal;
   text-align: center;
-  
 }
+.title2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: var(--font-title-large);
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  // text-align: center;
+}
+
 .title-light {
   color: var(--blanc); 
 }
 
 .title-purple {
-  
 color: var(--primary);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .title::before,
