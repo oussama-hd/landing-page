@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--blanc);
+  // background: var(--blanc);
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1145px;
@@ -14,9 +14,10 @@
   height: 77px;
   border-radius: 19px;
   z-index: 2;
+  background: rgba(255, 255, 255, 0.62); 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .menu {
   display: flex;
