@@ -1,0 +1,28 @@
+<section >
+    <div class="about_section ">
+        <img [src]="'./assets/images/bg-aboutus.svg'" alt="Picture">
+        <div class="overlay">
+         <div class="about-content">
+          <div class="about-heading">
+            <h1 class="title title-light">A propos de nous</h1>
+            <p class="subheader title-light">B-Link Solution, fondée en 2021, est un leader innovant dans le domaine de l'InsurTech. Notre expertise allie une profonde connaissance du secteur de l'assurance à une maîtrise des technologies de pointe.</p>
+          </div>
+          <div class="about-footer">
+            <div class="grid-container">
+              <div class="grid-btn">
+                <div *ngFor="let section of sections">
+                  <app-expandable-button [section]="section"> </app-expandable-button>
+                </div>
+              </div>
+              <div></div>
+            </div>                
+          </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
