@@ -1,9 +1,16 @@
-<div class="item" [class.active]="isActive">
+<!-- <div class="item" [class.active]="isActive">
   <div class="grid-container">
     <div class="content">
       <h2 class="title2 title-purple">{{ title }}</h2>
       <p class="description">{{ content }}</p>
     </div>
     <img  [src]="image" alt={{image}}>
+  </div>
+</div> -->
+
+<div class="item" [class.active]="isActive">
+  <div class="content">
+    <h2 class="title2 title-purple">{{ item.title }}</h2>
+    <p class="subheader2">{{ item.content }}</p>
   </div>
 </div>

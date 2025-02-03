@@ -1,4 +1,4 @@
-<section class="slider">
+<!-- <section class="slider">
 <div class="section-container">
     <app-slider-item 
         *ngFor="let item of items; let i = index"
@@ -12,10 +12,31 @@
         [activeIndex]="itemActive"
         (itemSelected)="onThumbnailSelect($event)">
     </app-thumbnail>
-
-<!-- <div style="background: red;">conteneur 1</div>
-
-<div style="background: yellow;">conteneur 2</div> -->
 </div>
+</section> -->
 
-</section>
+<div class="slider" [style.background]="items[itemActive].background">
+  <div style="max-width:1800px; margin: auto;">
+      <div class="flex-container">
+        <div class="content">
+          <app-slider-item  
+            *ngFor="let item of items; let i = index"
+            [item]="item"
+            [isActive]="itemActive === i"
+            [hidden]="itemActive !== i">
+          </app-slider-item>
+        </div>
+        
+  
+      <div class="small-image">
+        <img [src]="items[itemActive].image" alt="Small Image" />
+      </div>
+      </div>    
+      <div class="thumbnail-row">
+        <app-thumbnail
+         [activeIndex]="itemActive"
+         (itemSelected)="onThumbnailSelect($event)"
+       ></app-thumbnail>
+      </div>
+    </div>
+</div>

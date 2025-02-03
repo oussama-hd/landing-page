@@ -7,9 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./slider-item.component.css']
 })
 export class SliderItemComponent {
-  @Input() image!: string;
-  @Input() title!: string;
-  @Input() content!: string;
+  @Input() item: any;
   @Input() isActive: boolean = false;
 }
 

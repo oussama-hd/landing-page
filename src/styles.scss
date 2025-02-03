@@ -145,11 +145,11 @@ h6 a {
   letter-spacing: normal;
   text-align: center;
 }
+
 .title2 {
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 0;
   font-size: var(--font-title-large);
   font-weight: 600;
   font-stretch: normal;
@@ -157,6 +157,16 @@ h6 a {
   line-height: 1.45;
   letter-spacing: normal;
   // text-align: center;
+}
+
+@media only screen and (max-width: 1179px) {
+  .title2 {
+    font-size: var(--font-title-large-mobile);
+  }
+  .subheader2 {
+    font-size: var(--font-title-small-mobile);
+  }
+
 }
 
 .title-light {
@@ -171,6 +181,7 @@ color: var(--primary);
   max-width: 100%;
   height: auto;
 }
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -484,9 +495,9 @@ dl, ol, ul {
     }
   }
   
-  @media (min-width: 1519px) {
+  @media (min-width: 1620px) {
     .container {
-      width: 1316px;
+      width: 1416px;
     }
   }
   
